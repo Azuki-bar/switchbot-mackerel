@@ -21,7 +21,7 @@ jobs:
         run: |-
           export TIMESTAMP=$(date +%s)
           export SHA=$(echo ${{ github.sha }} | cut -c1-7)
-          echo "image_tag=${SHA}-${TIMESTAMP}" >> $GITHUB_OUTPUTS
+          echo "image_tag=${SHA}-${TIMESTAMP}" >> $GITHUB_OUTPUT
       - name: Build and Push
         uses: docker/build-push-action@v4
         with:
