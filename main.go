@@ -159,7 +159,7 @@ func main() {
 			mackerelMetics = append(
 				mackerelMetics,
 				MackerelMetric{
-					Name:  fmt.Sprintf("switchbot.%s.%s", metric.DeviceID, valType),
+					Name:  fmt.Sprintf("switchbot.%s.%s", valType, metric.DeviceID),
 					Time:  timeNow,
 					Value: metric.Values[valType],
 				},
