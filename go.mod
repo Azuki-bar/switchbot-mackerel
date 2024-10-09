@@ -1,10 +1,12 @@
 module github.com/azuki-bar/switchbot-mackerel
 
-go 1.20
+go 1.22.0
+
+toolchain go1.23.2
 
 require (
 	github.com/nasa9084/go-switchbot v1.0.0
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df
+	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c
 )
 
 require (
